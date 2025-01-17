@@ -46,7 +46,7 @@ k1, k2 {
  /* Modal styles */
  .modal {
     display: none; /* Hidden by default */
-    position: relative;
+    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
