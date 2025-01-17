@@ -38,3 +38,6 @@ var square = calculateSquare(number);
 
 // Log the result to the console
 console.log("The square of " + number + " is " + square);
+// Display an alert with a greeting message
+alert("Hello, world!");
+
