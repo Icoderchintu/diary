@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     paragraph.textContent = "This is a sample paragraph to make the webpage look more interesting.";
     paragraph.style.textAlign = "center";
     paragraph.style.color = "#666";
-    document.body.appendChild(paragraph);
+    document.body.insertBefore(paragraph, document.body.firstChild);
 });
 

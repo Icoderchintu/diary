@@ -43,3 +43,7 @@ k1, k2 {
         max-width: 90%; /* Make sure the content is responsive */
     }
 }
+
+body {
+    background-color: #d3d3d3; /* Light grey background */
+}
