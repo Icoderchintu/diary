@@ -1,2 +1,2 @@
 # diary
-I am just learning how to use git hub and Its related with my personal writing 
+I am just doing experiment with different things related to web development to learn about it.
