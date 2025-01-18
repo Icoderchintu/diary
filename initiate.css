@@ -31,4 +31,4 @@ k1, k2 {
         margin-right: 5%; /* Reduce margins for smaller screens */
         max-width: 90%; /* Make sure the content is responsive */
     }
-
+    /* End of media query */
