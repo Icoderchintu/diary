@@ -36,6 +36,6 @@ k1, k2 {
 .links {
         position: absolute;
         top: 0;
-        left: 0;
+        right:auto 0;
         margin: 10px; /* Optional: Add some margin if needed */
     }
