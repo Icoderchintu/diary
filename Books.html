@@ -16,12 +16,32 @@
         h1 {
             color: #00d4ff;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
         }
         p, ol, ul {
-            max-width: 800px;
-            margin: 20px auto;
             line-height: 1.6;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
         }
         a {
             color: #ff6b6b;
@@ -30,30 +50,30 @@
         a:hover {
             text-decoration: underline;
         }
-        .objective {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        b {
+        strong {
             color: #00d4ff;
         }
     </style>
 </head>
 <body>
     <h1>Books</h1>
-    <p class="objective">Objective: Read 52 books in 2025 and share the journey and learnings.</p>
-    <p>I have decided to read 52 books in 2025. I will take you through the journey of each book I read and the learning I get from it.</p>
-    <p>I have tried multiple times to have a YouTube channel and made many channels and uploaded and all failed as I was not consistent. I will in the future have a YouTube channel sometime in the future by the name of <b>Explore</b>.</p>
-    <br><br> <b>February 2025 books</b>
-    <ol>
-        <li>0 to 1 by <a href="https://en.wikipedia.org/wiki/Peter_Thiel" style="color: white;">Peter Thiel</a></li>
-    </ol>
-    <br><p>I had read the book Homo sapiens and Homo Deus by the Israeli historian and author <a href="https://www.ynharari.com/" style="color: white;">Yuval Noah Harari</a>.<br>
-    One takes you through a glimpse of human history and the other attempts to show the future glimpse of human journey.</p>
-    <a href="index.html" style="color: white;">Back to Diary</a>
+    <section class="objective">
+        <h2>Objective</h2>
+        <p>Read 52 books in 2025 and share the journey and learnings from each one.</p>
+    </section>
+    <section class="introduction">
+        <h2>Introduction</h2>
+        <p>I have decided to read 52 books in 2025. This page will document my journey through each book, highlighting key learnings and insights.</p>
+    </section>
+    <section class="books-read">
+        <h2>Books Read</h2>
+        <h3>February 2025</h3>
+        <ol>
+            <li><strong>0 to 1</strong> by <a href="https://en.wikipedia.org/wiki/Peter_Thiel">Peter Thiel</a></li>
+        </ol>
+        <p>Additionally, I have read <strong>Homo Sapiens</strong> and <strong>Homo Deus</strong> by the Israeli historian and author <a href="https://www.ynharari.com/">Yuval Noah Harari</a>. The first provides a glimpse of human history, while the second explores future possibilities for humanity.</p>
+    </section>
+    <a href="index.html">Back to Diary</a>
 </body>
 </html></content>
 <parameter name="filePath">c:\Users\Dell\Diary\diary\Books.html<!DOCTYPE html>
