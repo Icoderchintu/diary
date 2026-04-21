@@ -4,78 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thoughts</title>
-    <style>
-        body {
-            background: radial-gradient(ellipse at center, #4b134f 0%, #c94b4b 50%, #2c1810 100%);
-            color: #ffffff;
-            font-family: 'Courier New', monospace;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            position: relative;
-            overflow: hidden;
-        }
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: radial-gradient(4px 4px at 70px 90px, #ff0080, transparent),
-                              radial-gradient(2px 2px at 180px 140px, #00ff88, transparent),
-                              radial-gradient(3px 3px at 280px 70px, #ff0080, transparent);
-            background-repeat: repeat;
-            background-size: 350px 180px;
-            animation: swirl 10s ease-in-out infinite;
-            pointer-events: none;
-        }
-        @keyframes swirl {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        h1 {
-            color: #00ff88;
-            text-align: center;
-            margin-bottom: 40px;
-            text-shadow: 0 0 20px #00ff88;
-            animation: bounce 4s ease-in-out infinite;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        p, ol, ul {
-            max-width: 800px;
-            margin: 20px auto;
-            line-height: 1.6;
-        }
-        a {
-            color: #ff0080;
-            text-decoration: none;
-            text-shadow: 0 0 5px #ff0080;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #00ff88;
-            text-shadow: 0 0 10px #00ff88;
-        }
-        .objective {
-            background: rgba(0, 255, 136, 0.1);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
-            border: 1px solid #00ff88;
-        }
-        li {
-            margin-bottom: 15px;
-            color: #ff0080;
-            text-shadow: 0 0 5px #ff0080;
-            font-style: italic;
-        }
-    </style>
+    <link rel="stylesheet" href="Thoughts.css">
 </head>
 <body>
     <h1>Thoughts</h1>
@@ -83,7 +12,8 @@
     <ul>
         <li>We live and die for the story we have been told.</li>
     </ul>
-    <a href="index.html" style="color: white;">Back to Diary</a>
+    <a href="index.html">Back to Diary</a>
+    <script src="Thoughts.js"></script>
 </body>
 </html></content>
 <parameter name="filePath">c:\Users\Dell\Diary\diary\Thoughts.html

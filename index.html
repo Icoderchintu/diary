@@ -4,97 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diary</title>
-    <style>
-        body {
-            background: radial-gradient(ellipse at center, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
-            color: #ffffff;
-            font-family: 'Courier New', monospace;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            position: relative;
-            overflow: hidden;
-        }
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: radial-gradient(2px 2px at 20px 30px, #eee, transparent),
-                              radial-gradient(2px 2px at 40px 70px, #fff, transparent),
-                              radial-gradient(1px 1px at 90px 40px, #eee, transparent),
-                              radial-gradient(1px 1px at 130px 80px, #fff, transparent),
-                              radial-gradient(2px 2px at 160px 30px, #ddd, transparent);
-            background-repeat: repeat;
-            background-size: 200px 100px;
-            animation: twinkle 4s ease-in-out infinite alternate;
-            pointer-events: none;
-        }
-        @keyframes twinkle {
-            0% { opacity: 0.3; }
-            100% { opacity: 1; }
-        }
-        .links ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .links li {
-            display: inline;
-            margin: 0 20px;
-        }
-        .links a {
-            color: #00ff88;
-            text-decoration: none;
-            font-weight: bold;
-            text-shadow: 0 0 10px #00ff88;
-            transition: all 0.3s;
-            font-size: 1.2em;
-        }
-        .links a:hover {
-            color: #ff0080;
-            text-shadow: 0 0 20px #ff0080;
-            transform: scale(1.1);
-        }
-        .entry {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(0, 255, 136, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
-            border: 1px solid #00ff88;
-            position: relative;
-            z-index: 1;
-        }
-        h1, h2 {
-            color: #ff0080;
-            text-align: center;
-            text-shadow: 0 0 15px #ff0080;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-        @keyframes glow {
-            from { text-shadow: 0 0 15px #ff0080; }
-            to { text-shadow: 0 0 25px #ff0080, 0 0 35px #ff0080; }
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-            color: #00ff88;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="links">
         <ul>
-            <li><a href="Thoughts.html" style="color: white;">Thoughts</a></li>
-            <li><a href="Books.html" style="color: white;">Books</a></li>
-            <li><a href="Opinions.html" style="color: white;">Opinions</a></li>
+            <li><a href="Thoughts.html">Thoughts</a></li>
+            <li><a href="Books.html">Books</a></li>
+            <li><a href="Opinions.html">Opinions</a></li>
         </ul>
     </div>
     <div class="entry">
@@ -109,6 +26,7 @@
         </ul>
         <p>Books and Opinions have separate links to track progress in reading and sharing perspectives.</p>
     </div>
+    <script src="index.js"></script>
 </body>
 </html></content>
 <parameter name="filePath">c:\Users\Dell\Diary\diary\index.html
