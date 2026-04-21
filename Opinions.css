@@ -1,42 +1,15 @@
 body {
-    background: radial-gradient(ellipse at center, #2d1b69 0%, #11998e 50%, #4b0082 100%);
+    background: black;
     color: #ffffff;
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 20px;
     min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(2px 2px at 100px 80px, #aa0088, transparent),
-                      radial-gradient(3px 3px at 200px 120px, #0088aa, transparent),
-                      radial-gradient(1px 1px at 300px 60px, #aa0088, transparent);
-    background-repeat: repeat;
-    background-size: 400px 250px;
-    animation: drift 8s linear infinite;
-    pointer-events: none;
-}
-@keyframes drift {
-    from { transform: translateX(0px); }
-    to { transform: translateX(50px); }
 }
 h1, h2 {
-    color: #0088aa;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 30px;
-    text-shadow: 0 0 20px #0088aa;
-    animation: flicker 1.5s ease-in-out infinite alternate;
-}
-@keyframes flicker {
-    from { opacity: 1; }
-    to { opacity: 0.8; }
 }
 p, ol, ul {
     max-width: 800px;
@@ -44,25 +17,17 @@ p, ol, ul {
     line-height: 1.6;
 }
 a {
-    color: #aa0088;
+    color: #ffffff;
     text-decoration: none;
-    text-shadow: 0 0 5px #aa0088;
 }
 a:hover {
     text-decoration: underline;
-    color: #0088aa;
-    text-shadow: 0 0 10px #0088aa;
 }
 .objective {
-    background: rgba(170, 0, 136, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    text-align: center;
-    box-shadow: 0 0 30px rgba(170, 0, 136, 0.3);
-    border: 1px solid #aa0088;
 }
 b {
-    color: #0088aa;
-    text-shadow: 0 0 5px #0088aa;
+    color: #ffffff;
 }

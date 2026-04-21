@@ -1,33 +1,10 @@
 body {
-    background: radial-gradient(ellipse at center, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+    background: black;
     color: #ffffff;
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 20px;
     min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(2px 2px at 20px 30px, #ddd, transparent),
-                      radial-gradient(2px 2px at 40px 70px, #eee, transparent),
-                      radial-gradient(1px 1px at 90px 40px, #ddd, transparent),
-                      radial-gradient(1px 1px at 130px 80px, #eee, transparent),
-                      radial-gradient(2px 2px at 160px 30px, #ccc, transparent);
-    background-repeat: repeat;
-    background-size: 200px 100px;
-    animation: twinkle 4s ease-in-out infinite alternate;
-    pointer-events: none;
-}
-@keyframes twinkle {
-    0% { opacity: 0.3; }
-    100% { opacity: 1; }
 }
 .links ul {
     list-style-type: none;
@@ -40,43 +17,26 @@ body::before {
     margin: 0 20px;
 }
 .links a {
-    color: #0088aa;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0 0 10px #0088aa;
-    transition: all 0.3s;
     font-size: 1.2em;
 }
 .links a:hover {
-    color: #aa0088;
-    text-shadow: 0 0 20px #aa0088;
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 .entry {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(0, 136, 170, 0.1);
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 136, 170, 0.3);
-    border: 1px solid #0088aa;
-    position: relative;
-    z-index: 1;
 }
 h1, h2 {
-    color: #aa0088;
+    color: #ffffff;
     text-align: center;
-    text-shadow: 0 0 15px #aa0088;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-@keyframes glow {
-    from { text-shadow: 0 0 15px #aa0088; }
-    to { text-shadow: 0 0 25px #aa0088, 0 0 35px #aa0088; }
 }
 ul {
     padding-left: 20px;
 }
 li {
     margin-bottom: 10px;
-    color: #0088aa;
 }
